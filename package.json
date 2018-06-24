@@ -1,5 +1,5 @@
 {
-  "name": "travel-site",
+  "name": "trillo-project",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -44,12 +44,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fgiananti/travel-site.git"
+    "url": "git+https://github.com/fgiananti/trillo-project.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fgiananti/travel-site/issues"
+    "url": "https://github.com/fgiananti/trillo-project/issues"
   },
-  "homepage": "https://github.com/fgiananti/travel-site#readme"
+  "homepage": "https://github.com/fgiananti/trillo-project#readme"
 }
