@@ -73,8 +73,7 @@ body {
   max-width: 120rem;
   margin: 8rem auto;
   background-color: #faf9f9;
-  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
-  min-height: 50rem; }
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3); }
 
 .header {
   font-size: 1.4rem;
@@ -387,3 +386,45 @@ body {
     color: #eb2f64;
     font-size: 2.2rem;
     font-weight: 300; }
+
+.cta {
+  padding: 3.5rem 0;
+  text-align: center; }
+  .cta__book-now {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem; }
+
+.btn-big {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-radius: 100px;
+  border: none;
+  background-image: linear-gradient(to right, #ff3366, #ba265d);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer; }
+  .btn-big > * {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    transition: all .2s; }
+  .btn-big__visible {
+    padding: 2rem 7.5rem; }
+  .btn-big__invisible {
+    position: absolute;
+    padding: 2rem 0;
+    left: 0;
+    top: -100%; }
+  .btn-big:hover {
+    background-image: linear-gradient(to left, #ff3366, #ba265d); }
+  .btn-big:hover .btn-big__visible {
+    transform: translateY(100%); }
+  .btn-big:hover .btn-big__invisible {
+    top: 0; }
+  .btn-big:focus {
+    outline: none;
+    animation: pulsate 1s infinite; }
