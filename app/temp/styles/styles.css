@@ -66,6 +66,9 @@ body {
   font-size: 1.6rem;
   color: #777; }
 
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem; }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -94,8 +97,25 @@ body {
 
 .hotel-view {
   background-color: #fff;
-  flex: 1;
-  height: 80rem; }
+  flex: 1; }
+
+.detail {
+  display: flex;
+  padding: 4.5rem;
+  background-color: #faf9f9;
+  border-bottom: 1px solid #f4f2f2; }
+
+.description {
+  font-size: 1.4rem;
+  background-color: #fff;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+  padding: 3rem; }
+
+.user-reviews {
+  background-color: yellowgreen;
+  flex: 1; }
 
 .logo {
   height: 3.5rem;
@@ -233,7 +253,8 @@ body {
     letter-spacing: 1px;
     padding: 1.5rem 3rem; }
   .overview__stars {
-    margin-right: auto; }
+    margin-right: auto;
+    display: flex; }
   .overview__icon-star, .overview__icon-location {
     width: 1.75rem;
     height: 1.75rem;
@@ -277,3 +298,42 @@ body {
     animation: pulsate 1s infinite; }
   .btn-inline:focus {
     outline: none; }
+
+.list {
+  list-style: none;
+  margin: 3rem 0;
+  padding: 3rem 0;
+  border-top: 1px solid #f4f2f2;
+  border-bottom: 1px solid #f4f2f2;
+  display: flex;
+  flex-wrap: wrap; }
+  .list__item {
+    flex: 0 0 50%;
+    margin-bottom: .7rem; }
+    .list__item::before {
+      content: "";
+      display: inline-block;
+      height: 2rem;
+      width: 2rem;
+      margin-right: .7rem;
+      background-color: #eb2f64;
+      -webkit-mask-image: url(../../assets/images/icons/chevron-thin-right.svg);
+      -webkit-mask-size: cover;
+      mask-image: url(../../assets/images/icons/chevron-thin-right.svg);
+      mask-size: cover; }
+
+.recommend {
+  font-size: 1.3rem;
+  color: #999;
+  display: flex;
+  align-items: center; }
+  .recommend__count {
+    margin-right: auto; }
+  .recommend__photo {
+    box-sizing: content-box;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: 3px solid red; }
+    .recommend__photo:not(:last-child) {
+      margin-right: -1.5rem; }

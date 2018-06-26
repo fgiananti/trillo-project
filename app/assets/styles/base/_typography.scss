@@ -5,3 +5,8 @@ body {
   font-size: 1.6rem;
   color: $color-grey-dark-2;
 }
+
+
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
