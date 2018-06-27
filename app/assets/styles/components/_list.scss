@@ -24,11 +24,14 @@
       // background-size: cover;
 
       // newer browsers - masks
-      background-color: $color-primary;
-      -webkit-mask-image: url(../../assets/images/icons/chevron-thin-right.svg);
-      -webkit-mask-size: cover;
-      mask-image: url(../../assets/images/icons/chevron-thin-right.svg);
-      mask-size: cover;
+      @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+        background-color: $color-primary;
+        -webkit-mask-image: url(../../assets/images/icons/chevron-thin-right.svg);
+        -webkit-mask-size: cover;
+        mask-image: url(../../assets/images/icons/chevron-thin-right.svg);
+        mask-size: cover;
+        background-image: none;
+      }
     }
   }
 

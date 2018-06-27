@@ -5,6 +5,12 @@
   align-items: center;
   justify-content: center;
 
+  @include respond(custom500) { // width < 900?
+    order: 1;
+    flex: 0 0 100%;
+    background-color: $color-grey-light-2;
+  }
+
   &__input {
     font-family: inherit;
     font-size: inherit;
